@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'VenusRising';
+	src: url('../fonts/venus_rising-webfont.eot');
+	src: url('../fonts/venus_rising-webfont.eot?iefix') format('eot'),
+		 url('../fonts/venus_rising-webfont.woff') format('woff'),
+		 url('../fonts/venus_rising-webfont.ttf') format('truetype'),
+		 url('../fonts/venus_rising-webfont.svg#webfontEjYoVhIr') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}

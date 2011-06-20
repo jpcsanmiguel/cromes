@@ -1,0 +1,45 @@
+/* Includes */ 
++global-reset;
+@include 'fonts.css';
+@include 'forms.css';
+
+@constants {
+	/* colors */
+	blue: #06b8f6;
+	lightBlue: #bbf7ff;
+	darkerGrey: #070708;
+	darkGrey: #010406;
+	Grey: #131313;
+	lightGrey: #2c2c2c;
+	lighterGrey: #424242; 
+}
+/* Mixins */
+=textGlow(!color) {
+	color: !color; text-shadow: 1px 1px 4px !color; } 
+=textFont(!size) {
+	font: !size 'VenusRising', Callibri, Arial, sans-serif;}
+=textFontNormal(!size) {
+	font: !size Arial, sans-serif;}
+=boxshadow(!x, !y, !blur, !color) {
+	-moz-box-shadow : !x !y !blur !color;
+	-webkit-box-shadow : !x !y !blur !color;
+	box-shadow : !x !y !blur !color;
+}
+
+
+/* layering */
+#header { z-index: 15; }
+#navigation {  z-index: 14; }
+#stats { z-index: 13; }
+#profile {z-index: 12;}
+#alignment { z-index: 11; }
+#cascade { z-index: 10; }
+#extras { z-indez: 8;  }
+#chat_input { z-indez: 9; }
+
+/* onto the grid */
+body {
+	background: none repeat scroll 0 0 #FFFFFF; color: #333333; font-family: sans-serif; }
+
+#container {
+	display: block; max-width: 970px; height: 1050px; position: relative; overflow: hidden; margin: 0 auto; background: #eee;}
