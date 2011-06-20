@@ -21,9 +21,9 @@ $config['base_path'] = "/";
 $config['base_url']	= $config['base_protocol'] . $config['base_domain'] . $config['base_path'];
 $config['core_domain'] = 'cromes.gobeyondstudios.com';
 
-$config['assets_base_url'] 	= 'http://'.$config['base_domain'].'/'; //"http://assets.domain.com/";
-$config['js_base_url'] 		= 'http://'.$config['base_domain'].'/'; //"http://js.domain.com/";
-$config['css_base_url'] 	= 'http://'.$config['base_domain'].'/'; //"http://css.domain.com/";
+$config['assets_base_url'] 	= 'http://'.$config['core_domain']; //"http://assets.domain.com/";
+$config['js_base_url'] 		= 'http://'.$config['core_domain']; //"http://js.domain.com/";
+$config['css_base_url'] 	= 'http://'.$config['core_domain']; //"http://css.domain.com/";
 
 /*
 |--------------------------------------------------------------------------
