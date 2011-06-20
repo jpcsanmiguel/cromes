@@ -27,7 +27,7 @@
 	
 	?>
 	
-	<script type="text/javascript" src="<?= $this->urls->js_base_url ?>storage/js/libs/head.min.js?v=<?= filemtime("storage/js/libs/head.min.js"); ?>"></script>
+	<script type="text/javascript" src="<?= $this->urls->js_base_url ?>/storage/js/libs/head.min.js?v=<?= filemtime("storage/js/libs/head.min.js"); ?>"></script>
 	
 	<script type="text/javascript">
 	//<![CDATA[
@@ -37,7 +37,7 @@
 		    {jquery: "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"},
 		    {jqueryui: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"},
 		    {json: "<?= $this->urls->js_base_url ?>storage/js/libs/jquery.json.js"},
-		    {facebox: "<?= $this->urls->js_base_url ?>storage/js/libs/facebox.js?v=<?= filemtime("storage/js/libs/facebox.js"); ?>"}
+		    {facebox: "<?= $this->urls->js_base_url ?>/storage/js/libs/facebox.js?v=<?= filemtime("storage/js/libs/facebox.js"); ?>"}
 		);
 		
 		<?php
