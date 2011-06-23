@@ -83,7 +83,7 @@ caption {background:#eee;}
 }
 /* CLEAR FIX : END ------------------------------------------------- */
 
-#container{width:964px; margin:0 auto; position:relative;background:#fff}
+#container{width:964px; margin:0 auto; position:relative;background:#fff;}
 
 /* MENU */
 #menu{width:964px; position:relative; clear:both; height:49px;background:#fff url(../images/menu_bg.png) 0 0 repeat-x;}
