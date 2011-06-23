@@ -36,7 +36,7 @@
 		head.js(
 		    {jquery: "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"},
 		    {jqueryui: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"},
-		    {json: "<?= $this->urls->js_base_url ?>storage/js/libs/jquery.json.js"},
+		    {json: "<?= $this->urls->js_base_url ?>/storage/js/libs/jquery.json.js"},
 		    {facebox: "<?= $this->urls->js_base_url ?>/storage/js/libs/facebox.js?v=<?= filemtime("storage/js/libs/facebox.js"); ?>"}
 		);
 		
@@ -48,8 +48,8 @@
 				echo "head.js('{$script['url']}');";
 		}
 		
-		?>
 		
+		?>
 	//]]>
 	</script>
 	
@@ -57,28 +57,24 @@
 	
 </head>
 
-<body style="overflow:hidden;">
+<body>
+	<div id="container">
+		<div id="menu">
+		</div><!-- /menu -->
 
-
-  <div id="container">
-
-    
-<?php
-	// load content
-	if (!empty($view)) {
-		$this->load->view($view, $data);
-	}
-
-?>
-
-  
-  <script type="text/javascript">
-  //<![CDATA[
-
-	
-
-  //]]>
-  </script>
-  
+		<div id="content">
+			<div id="header">
+				logos and/or some menus here
+			</div><!-- /header -->
+			<div id="main_content">
+				<?php 
+					if (!isset($data)) $data = null;
+					$this->load->view($view, $data);
+				?>
+			</div>
+			<div id="footer">
+			</div><!-- /footer -->
+		</div><!-- /content -->
+	</div><!-- /container -->
 </body>
 </html>
