@@ -83,13 +83,13 @@ caption {background:#eee;}
 }
 /* CLEAR FIX : END ------------------------------------------------- */
 
-#container{width:964px; margin:0 auto; position:relative;}
+#container{width:964px; margin:0 auto; position:relative;background:#fff}
 
 /* MENU */
 #menu{width:964px; position:relative; clear:both; height:49px;background:#fff url(../images/menu_bg.png) 0 0 repeat-x;}
 
 /* CONTENT */
-#content{width:964px; min-height:409px;position:relative; clear:both; background:url(../images/content_bg.png) 0 0 no-repeat;}
+#content{width:964px; min-height:409px;position:relative; clear:both;background:#fff background:url(../images/content_bg.png) 0 0 no-repeat;}
 
 /* HEADER */
 #header{width:944px; height:159px; padding:10px;}
