@@ -16,6 +16,7 @@
 	
 	<link rel="stylesheet" type="text/css" media="all" href="<?= $this->urls->css_base_url ?>/themes/basic/skins/<?= $this->skin ?>/css/style.css?v=<?= filemtime("themes/basic/skins/{$this->skin}/css/style.css"); ?>" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?= $this->urls->css_base_url ?>/themes/basic/skins/facebox/facebox.css?v=<?= filemtime("themes/basic/skins/facebox/facebox.css"); ?>" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?= $this->urls->css_base_url ?>/themes/basic/skins/<?= $this->skin ?>/css/jquery-ui-1.8.11.custom.css?v=<?= filemtime("themes/basic/skins/{$this->skin}/css/jquery-ui-1.8.11.custom.css"); ?>" />
 	
 	<?php
 	
@@ -35,7 +36,7 @@
 		// load js
 		head.js(
 		    {jquery: "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"},
-		    {jqueryui: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"},
+		    {jqueryui: "<?= $this->urls->js_base_url ?>/storage/js/libs/jquery-ui-1.8.11.custom.min.js"},
 		    {json: "<?= $this->urls->js_base_url ?>/storage/js/libs/jquery.json.js"},
 		    {facebox: "<?= $this->urls->js_base_url ?>/storage/js/libs/facebox.js?v=<?= filemtime("storage/js/libs/facebox.js"); ?>"}
 		);
