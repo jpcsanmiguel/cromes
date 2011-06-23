@@ -1,11 +1,3 @@
 RewriteEngine on
 RewriteCond $1 !^(index\.php|crossdomain\.xml|test\.php|user_guide|xd_receiver\.html|uploader|favicon\.ico|themes|storage|chat|scaffold|maintenance\.html|cache\.manifest)
 RewriteRule ^(.*)$ index.php/$1 [L]
-
-# Anything after .css is used as the output= 
-RewriteCond 	%{REQUEST_URI}			\.css
-RewriteRule 	^(.+)/([^/]+)/?$ 		/scaffold/index.php?request=%{REQUEST_URI}&output=$2&%{QUERY_STRING}
-
-RewriteCond		%{REQUEST_FILENAME}		-f
-RewriteCond 	%{REQUEST_URI}			\.css$
-RewriteRule 	^(.+)$ 					/scaffold/index.php?request=%{REQUEST_URI}&%{QUERY_STRING}
